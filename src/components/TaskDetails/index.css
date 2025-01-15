@@ -1,0 +1,194 @@
+/* Task Details Container */
+.task-details-container {
+    right: 0;
+    width: 400px;
+    background-color: rgba(238, 246, 239, 1);
+    padding: 20px;
+      height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:space-between;
+  z-index: 100;
+    bottom:0;
+    
+  }
+  .task-details-header {
+    flex-direction: row;
+    justify-content:space-between;
+
+  }  textarea{
+    flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color:rgba(238, 246, 239, 1);
+  }
+  .task-details-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  .task-details-title {
+  font-size:20px;
+  }
+  .task-completion-checkbox{
+    margin-right:10px;
+    height:18px;
+    width:18px;
+  }
+  .task-sub{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .task-sub-1{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+  }
+  .star-btn {
+ font-size:20px;
+  }
+  /* For mobile view */
+  @media (max-width: 768px) {
+    .task-details-container {
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      padding: 15px;
+      box-shadow: none;
+      border-left: none;
+    }
+  
+    .task-details-header {
+      flex-direction: row;
+      justify-content:space-between;
+
+    }
+  
+    .task-details-title {
+      margin-bottom: 10px;
+    }
+  
+    .star-btn {
+      margin-top: 10px;
+
+    }
+  
+    .task-details-body {
+      margin-top: 15px;
+    }
+  
+    .task-details-row {
+      margin-bottom: 15px;
+      border-top: 2px solid #000000;
+    }
+  
+    .icon-btn {
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px;
+    }
+  
+    .task-details-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .close-btn, .delete-btn {
+      font-size: 22px;
+    }
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 480px) {
+    .task-details-container {
+      padding: 10px;
+    }
+  
+    .task-details-title span {
+      font-size: 16px;
+    }
+  
+    .icon-btn {
+      font-size: 16px;
+    }
+  
+    .start-btn {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .task-details-body {
+      margin-top: 12px;
+    }
+  
+    .task-details-row {
+      font-size: 14px;
+    }
+  
+    .task-details-footer {
+      font-size: 18px;
+    }
+  }
+  
+  /* Close button and delete button styles */
+  .close-btn, .delete-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  
+  .close-btn {
+    color: red;
+  }
+  
+  .delete-btn {
+    color: darkred;
+  }
+  
+  /* For a smooth transition for opening and closing the task details */
+  .task-details-container {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .task-details-container.open {
+    transform: translateX(0);
+  }
+  
+  .task-details-container.closed {
+    transform: translateX(100%);
+  }
+  .star-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #ccc;
+    cursor: pointer;
+    right:0;
+    margin-left:300px;
+  }
+  .star-btn.important {
+    color: #ffc107;
+  }
+  p{
+    margin-left:10px;
+  }

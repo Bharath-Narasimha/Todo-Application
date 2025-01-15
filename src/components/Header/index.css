@@ -1,0 +1,82 @@
+/* Basic Header Styles */
+/* Basic Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 40px; /* Adjust size of logo as per your image dimensions */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a9d8f;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .icon-btn:hover {
+    color: #2a9d8f;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .header-actions {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .search-input {
+      flex-grow: 1;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .icons {
+      margin-left: auto;
+    }
+  }

@@ -1,0 +1,21 @@
+.repeat-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-image:linear-gradient(to top, rgba(53, 121, 55, 0.1),rgba(208, 255, 210, 0.1));
+    border:none;
+    padding:2px;
+    
+  }
+  
+  .custom-repeat {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .custom-repeat input {
+    margin-left: 5px;
+    width: 50px;
+  }
+  
